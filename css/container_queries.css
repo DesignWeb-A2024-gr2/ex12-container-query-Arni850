@@ -1,0 +1,66 @@
+@container (width > 450px)
+{
+    h3
+    {
+        font-size: 2em;
+    }
+}
+
+@container (width > 400px) and (width < 500px)
+{
+    h3
+    {
+        display: inline-block;
+        width: 45cqmin;
+        vertical-align: top;
+    }
+
+    img
+    {
+        width: 50cqmin;
+    }
+}
+
+@container (width < 425)
+{
+    p
+    {
+        display: none;
+    }
+}
+
+@media screen and (width <= 1450px)
+{
+    #contenu_gauche
+    {
+        display: none;
+    }
+}
+
+@media screen and (width <= 950px)
+{
+    #contenu_droite
+    {
+        display: none;
+    }    
+}
+
+#contenu_droite
+{
+    container: droite / inline-size;
+}
+
+#contenu_gauche
+{
+    container: gauche / inline-size;
+}
+
+#contenu_principal
+{
+    container: principal / inline-size;
+}
+
+.carte
+{
+    container: carte / inline-size;
+}
